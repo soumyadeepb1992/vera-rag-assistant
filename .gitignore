@@ -1,0 +1,20 @@
+# Python environment / caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets (OPENAI_API_KEY lives here)
+env
+.env
+
+# Vector DB: rebuilt automatically from docs/ on first launch
+multi_pdf_db_*/
+my_local_db*/
+
+# Source documents: copy to docs/ on each device (one is confidential)
+docs/*
+!docs/.gitkeep
+
+# Local Claude Code settings
+.claude/settings.local.json
